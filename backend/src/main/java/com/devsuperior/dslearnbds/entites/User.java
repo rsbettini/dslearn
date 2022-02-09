@@ -81,6 +81,14 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public Set<Role> getRoles() {
+		return roles;
+	}
+	
+	public List<Notification> getNotifications() {
+		return notifications;
+	}
 
 	@Override
 	public int hashCode() {
